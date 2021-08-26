@@ -10,11 +10,11 @@ const sec1=document.querySelector('.sec1-1')
 const sec1a=document.querySelector('.sec1-1a')
 const sec1b=document.querySelector('.sec1-1b')
 const sec1c=document.querySelector('.sec1-1c')
-const sec1d=document.querySelector('.sec1 .sec1-1 .button')
+const sec1d=document.querySelector('.sec1 .button')
 const sec1txt=document.querySelector('.txt')
 
 
-const sec1icomask=document.querySelector('ico-mask')
+const sec1icomask=document.querySelectorAll('.ico-mask')
 const sec1ico1=document.querySelector('.ico1 img')
 const sec1ico2=document.querySelector('.ico2 img')
 const winsec1=window.innerHeight;
@@ -44,7 +44,7 @@ let elSec1a;
 let scrollDefault,scrSenond,state;
 let elSec3 = document.querySelector('.sec3');
 let elSec4 = document.querySelector('.sec4');
-let elSec3Top = elSec3.offsetTop ;
+// let elSec3Top = elSec3.offsetTop ;
 function scrollState(){
     scrSenond = window.scrollY;
     scrollDefault < scrSenond ?  state=true : state =false;
@@ -76,7 +76,7 @@ function slideFun(){
     let elSec32 = document.querySelector('.sec3-2');
     let elSec3P = document.querySelector('.sec3-2 p');
     let elSec4 = document.querySelector('.sec4');
-    let elSec3Top = elSec3.offsetTop ;
+    let elSec3Top = elSec3.offsetTop;
 
     //sec3 슬라이더
     elSec3.style = `height:${elSec3P.offsetWidth}px`;
@@ -149,7 +149,7 @@ const sec=document.querySelector('.sec')
 window.addEventListener('scroll',function(){
 
     if(window.innerHeight+400< window.scrollY){
-        console.log('문서 하단')
+        
         transimg1.style=`display:initial ;height:20px; margin-left:5px;margin-top:2px;`
         transimg.style=`animation:none; display:none; `
         maskdown.style='width:30px; height:30px; border-radius:100%; border:2px solid black; transition:0.5s;cursor: pointer;'

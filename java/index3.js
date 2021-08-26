@@ -48,8 +48,8 @@
 
 //메인페이지 화살표 
 const sec3=document.querySelector('.button3')
-const sec3txt=document.querySelector('.button3 txt')
-const sec3mask=document.querySelector('.button3 ico-mask')
+const sec3txt=document.querySelector('.button3 .txt')
+const sec3mask=document.querySelectorAll('.button3 ico-mask')
 
 sec3.addEventListener('mouseenter',function(){
    
@@ -72,7 +72,7 @@ sec3.addEventListener('mouseenter',function(){
 
 
   const sec2=document.querySelector('.button2')
-  const sec2txt=document.querySelector('.button2 txt')
+  const sec2txt=document.querySelector('.button2 .txt')
   const sec2mask=document.querySelector('.button2 ico-mask')
 
   sec2.addEventListener('mouseenter',function(){
